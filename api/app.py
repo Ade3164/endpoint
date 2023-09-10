@@ -15,7 +15,7 @@ def get_item():
   current_day = datetime.now().strftime('%A')
   utc_time = datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
   track = request.args.get('track')
-  github_file_url = "https://github.com/Ade3164/endpoint/blob/main/app.py "
+  github_file_url = "https://github.com/Ade3164/endpoint/blob/main/api/app.py"
   github_repo_url = "https://github.com/Ade3164/endpoint"
     
   res = {
