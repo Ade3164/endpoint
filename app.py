@@ -4,7 +4,7 @@ import pytz
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route("/api", methods=['GET'])
 def get_info():
     
     slack_name = "idris_adebayo"  
