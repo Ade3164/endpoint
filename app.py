@@ -4,8 +4,12 @@ import pytz
 
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+def home():
+  return "Welcome! kindly use th api service at /api"
+
 @app.route('/api', methods=['GET'])
-def get_info():
+def get_item():
     
     slack_name = request.args.get('slack_name')
     track = request.args.get('track')
@@ -39,4 +43,4 @@ def get_info():
 
 if __name__ == '__main__':
   
-    app.run(host='0.0.0.0', port=5000)
+    app.run(debug=True)
