@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def home():
-  return "Welcome! kindly use th api service at /api"
+  return "Welcome /api"
 
 @app.route('/api', methods=['GET'])
 def get_item():
