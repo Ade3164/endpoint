@@ -4,7 +4,7 @@ import pytz
 
 app = Flask(__name__)
 
-@app.route('/api', methods=['GET'])
+@app.route('/', methods=['GET'])
 def get_info():
     
     slack_name = "idris_adebayo"  
@@ -32,4 +32,5 @@ def get_info():
     return response
 
 if __name__ == '__main__':
-     app.run(host='localhost', port=80)
+  
+    app.run(host='localhost', port=5000)
